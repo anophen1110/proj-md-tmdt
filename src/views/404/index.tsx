@@ -16,7 +16,6 @@ const Page404 = () => {
                     <ButtonAll textColor='text-white' nameButton='Back to home page' background='bg-[#DB4444]'></ButtonAll>
                 </NavLink>
             </div>
-
         </>
     );
 };
