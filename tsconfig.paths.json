@@ -1,4 +1,3 @@
-
 {
   "compilerOptions": {
     "baseUrl": "./src",
@@ -9,8 +8,6 @@
       "@components/*": ["components/*"], 
       "@assets": ["assets"], 
       "@assets/*": ["assets/*"],
-      "@icons": ["icons"], 
-      "@icons/*": ["icons/*"],
       "@layoutStore": ["layouts"], 
       "@layoutStore/*": ["layouts/*"],
       "@redux": ["redux"], 
