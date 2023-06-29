@@ -8,6 +8,7 @@ const PageHome = () => {
         <>
             <TitleHead></TitleHead>
             <NavBar></NavBar>
+            this is home
         </>
     );
 };

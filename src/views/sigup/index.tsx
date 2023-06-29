@@ -1,10 +1,14 @@
+import NavBar from '@layoutStore/nav';
+import TitleHead from '@layoutStore/title-head';
 import React from 'react';
 
 const PageSigUp = () => {
     return (
-        <div>
-
-        </div>
+        <>
+            <TitleHead></TitleHead>
+            <NavBar></NavBar>
+            This is sigup
+        </>
     );
 };
 
