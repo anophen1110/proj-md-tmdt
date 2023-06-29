@@ -1,6 +1,7 @@
 import ButtonAll from '@components/button-account';
 import InputAll from '@components/input-all';
 import { FcGoogle } from 'react-icons/fc'
+import { NavLink } from 'react-router-dom'
 
 
 const FormSigup = () => {
@@ -21,7 +22,7 @@ const FormSigup = () => {
             </div>
             <div className='flex gap-x-4 left-6 ml-5 mt-7 opacity-50'>
                 <p>Already have account?</p>
-                <a href='#a'>Log in</a>
+                <NavLink to="/register">Log in</NavLink>
             </div>
         </div>
     );

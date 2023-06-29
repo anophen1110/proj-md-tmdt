@@ -3,7 +3,6 @@ import FormSigup from '@layoutStore/form-sigup';
 import NavBar from '@layoutStore/nav';
 import TitleHead from '@layoutStore/title-head';
 import url from '@assets/image/SliceAccount.png'
-import React from 'react';
 
 const PageSigUp = () => {
     return (
