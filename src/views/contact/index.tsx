@@ -1,3 +1,4 @@
+import ContactHotline from '@components/contact-hottline';
 import InputSearch from '@components/input-search';
 import NavBar from '@layoutStore/nav';
 import TitleHead from '@layoutStore/title-head';
@@ -8,6 +9,7 @@ const PageContact = () => {
         <>
             <TitleHead></TitleHead>
             <NavBar>{<InputSearch></InputSearch>}</NavBar>
+            <ContactHotline></ContactHotline>
             this is contact
         </>
     );
