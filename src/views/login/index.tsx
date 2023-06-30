@@ -3,6 +3,7 @@ import FormLogin from '@layoutStore/form-login';
 import NavBar from '@layoutStore/nav';
 import TitleHead from '@layoutStore/title-head';
 import url from '@assets/image/SliceAccount.png';
+import Footer from '@layoutStore/footer';
 
 const PageLogin = () => {
     return (
@@ -17,6 +18,7 @@ const PageLogin = () => {
                     <FormLogin></FormLogin>
                 </div>
             </div>
+            <Footer></Footer>
 
         </>
     );

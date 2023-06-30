@@ -4,9 +4,9 @@ export interface IInputAll {
     placeholder:string
 }
 export interface IButton {
-    size?:string,
     nameButton: string,
-    textColor:string,
+    size?:string,
+    textColor?:string,
     background?: string,
     border? :string,
     logo?: any

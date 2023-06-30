@@ -1,28 +1,30 @@
 import ButtonAll from '@components/button-account';
 import InputAll from '@components/input-all';
+import { useTranslation } from 'react-i18next';
 import { FcGoogle } from 'react-icons/fc'
 import { NavLink } from 'react-router-dom'
 
 
 const FormSigup = () => {
+    const { t } = useTranslation();
     return (
         <div>
             <div className='flex flex-col gap-y-7 mb-10'>
-                <p className='text-[34px] font-medium fontAcount leading-6'>Create an account</p>
-                <p className='font-normal leading-4'>Enter your details below</p>
+                <p className='text-[34px] font-medium fontAcount leading-6'>{t('create account')}</p>
+                <p className='font-normal leading-4'>{t('info')}</p>
             </div>
             <div>
-                <InputAll type={"text"} id={"name"} placeholder={"Name"}></InputAll>
-                <InputAll type={"email | phone"} id={"address"} placeholder={"Email or Phone Number"}></InputAll>
-                <InputAll type={"password"} id={"pass"} placeholder={"Password"}></InputAll>
+                <InputAll type={"text"} id="name" placeholder={t("name")}></InputAll>
+                <InputAll type={"email | phone"} id={"address"} placeholder={t("Email or Phone Number")}></InputAll>
+                <InputAll type={"password"} id={"pass"} placeholder={t("Password")}></InputAll>
             </div>
             <div className='flex flex-col gap-y-5'>
-                <ButtonAll size='w-[350px]' textColor='text-white' nameButton='Create Account' background='bg-[#DB4444]'></ButtonAll>
-                <ButtonAll size='w-[350px]' logo={<FcGoogle></FcGoogle>} textColor='text-black' border='border border-[#9CA3AF]' nameButton='Sign up with Google' background='bg-white'></ButtonAll>
+                <ButtonAll size='w-[350px]' textColor='text-white' nameButton={t('Create Account')} background='bg-[#DB4444]'></ButtonAll>
+                <ButtonAll size='w-[350px]' logo={<FcGoogle></FcGoogle>} textColor='text-black' border='border border-[#9CA3AF]' nameButton={t('google')} background='bg-white'></ButtonAll>
             </div>
             <div className='flex gap-x-3 ml-14 mt-7 opacity-50'>
-                <p>Already have account?</p>
-                <NavLink to="/login" className="underline">Log in</NavLink>
+                <p>{t('Already')}</p>
+                <NavLink to="/login" className="underline">{t("login")}</NavLink>
             </div>
         </div>
     );

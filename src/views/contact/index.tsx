@@ -1,5 +1,6 @@
-import ContactHotline from '@components/contact-hottline';
 import InputSearch from '@components/input-search';
+import Footer from '@layoutStore/footer';
+import HeaderContact from '@layoutStore/header-contact';
 import NavBar from '@layoutStore/nav';
 import TitleHead from '@layoutStore/title-head';
 import React from 'react';
@@ -9,8 +10,8 @@ const PageContact = () => {
         <>
             <TitleHead></TitleHead>
             <NavBar>{<InputSearch></InputSearch>}</NavBar>
-            <ContactHotline></ContactHotline>
-            this is contact
+            <HeaderContact></HeaderContact>
+            <Footer></Footer>
         </>
     );
 };

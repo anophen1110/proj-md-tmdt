@@ -3,6 +3,7 @@ import FormSigup from '@layoutStore/form-sigup';
 import NavBar from '@layoutStore/nav';
 import TitleHead from '@layoutStore/title-head';
 import url from '@assets/image/SliceAccount.png'
+import Footer from '@layoutStore/footer';
 
 const PageSigUp = () => {
     return (
@@ -17,6 +18,7 @@ const PageSigUp = () => {
                     <FormSigup></FormSigup>
                 </div>
             </div>
+            <Footer></Footer>
         </>
     );
 };

@@ -1,4 +1,5 @@
 import ButtonAll from '@components/button-account';
+import Footer from '@layoutStore/footer';
 import NavBar from '@layoutStore/nav';
 import TitleHead from '@layoutStore/title-head';
 import React from 'react';
@@ -16,6 +17,7 @@ const Page404 = () => {
                     <ButtonAll textColor='text-white' nameButton='Back to home page' background='bg-[#DB4444]'></ButtonAll>
                 </NavLink>
             </div>
+            <Footer></Footer>
         </>
     );
 };
