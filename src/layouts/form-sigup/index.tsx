@@ -17,12 +17,12 @@ const FormSigup = () => {
                 <InputAll type={"password"} id={"pass"} placeholder={"Password"}></InputAll>
             </div>
             <div className='flex flex-col gap-y-5'>
-                <ButtonAll textColor='text-white' nameButton='Create Account' background='bg-[#DB4444]'></ButtonAll>
-                <ButtonAll logo={<FcGoogle></FcGoogle>} textColor='text-black' border='border border-[#9CA3AF]' nameButton='Sign up with Google' background='bg-white'></ButtonAll>
+                <ButtonAll size='w-[350px]' textColor='text-white' nameButton='Create Account' background='bg-[#DB4444]'></ButtonAll>
+                <ButtonAll size='w-[350px]' logo={<FcGoogle></FcGoogle>} textColor='text-black' border='border border-[#9CA3AF]' nameButton='Sign up with Google' background='bg-white'></ButtonAll>
             </div>
-            <div className='flex gap-x-4 left-6 ml-5 mt-7 opacity-50'>
+            <div className='flex gap-x-3 ml-14 mt-7 opacity-50'>
                 <p>Already have account?</p>
-                <NavLink to="/register">Log in</NavLink>
+                <NavLink to="/login" className="underline">Log in</NavLink>
             </div>
         </div>
     );

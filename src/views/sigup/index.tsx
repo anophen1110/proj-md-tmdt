@@ -13,7 +13,7 @@ const PageSigUp = () => {
                 <div>
                     <img src={url} alt="" />
                 </div>
-                <div className='centerAll translate-x-[100%]'>
+                <div className='centerAll translate-x-[85%]'>
                     <FormSigup></FormSigup>
                 </div>
             </div>
