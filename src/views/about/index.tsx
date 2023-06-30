@@ -1,14 +1,16 @@
 import InputSearch from '@components/input-search';
+import HeaderAbout from '@layoutStore/header-about';
 import NavBar from '@layoutStore/nav';
 import TitleHead from '@layoutStore/title-head';
-import React from 'react';
+
 
 const PageAbout = () => {
     return (
         <>
             <TitleHead></TitleHead>
             <NavBar>{<InputSearch></InputSearch>}</NavBar>
-            this is about
+            <HeaderAbout></HeaderAbout>
+            {/* this is about */}
         </>
     );
 };
